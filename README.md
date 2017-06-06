@@ -7,6 +7,7 @@ This documentation provides examples for specific use cases from Backups.
 # Table of Contents
 
 * [Objetivo](#objetivo)
+* [Requerimientos Minimos](#requerimientos)
 * [Creando carpeta](#creando1)
 * [Creando Backup con Cron](#cron1)
 * [Creando archivo Logs](#logs1)
@@ -19,6 +20,11 @@ This documentation provides examples for specific use cases from Backups.
 # Objetivo:  
 Manual donde se describe las tareas  para realizar backups automaticos de una Base de 
 de Datos, en este caso utilizamos un Servidor con Linux  Ubuntu 16.04. Se debe de tener instalado Servidor Web Apache, y PHP Version 7.0
+
+<a name="requerimientos"></a>
+# Requerimientos Minimos:  
+Servidor con Linux  Ubuntu 16.04. Servidor Web Apache. PHP Version 7.0
+
 
 
 <a name="creando1"></a>
