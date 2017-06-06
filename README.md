@@ -18,7 +18,7 @@ This documentation provides examples for specific use cases from Backups.
 <a name="objetivo"></a>
 # Objetivo:  
 Manual donde se describe las tareas  para realizar backups automaticos de una Base de 
-de Datos.
+de Datos, en este caso utilizamos un Servidor con Linux  Ubuntu 16.04. Se debe de tener instalado Servidor Web Apache, y PHP Version 7.0
 
 
 <a name="creando1"></a>
