@@ -41,6 +41,31 @@ Corre cada cuatro horas.
 Cambiando permisos
 root@aguila2-OEM:/var/backup-bd# chmod 777 /var/log/backup-bd.log
 
+
+
+<a name="phpini"></a>
+## Configuracion de Php.ini:  
+Habilitaciones que debemos hacer en el archivo php.ini para poder enviar emails con archivo adjunto via la libreria sendgrid
+ruta: /etc/php/7.0/apache2 
+
+;Windows Extensions
+; Note that ODBC support is built in, so no dll is needed for it.
+; Note that many DLL files are located in the extensions/ (PHP 4) ext/ (PHP 5+)
+; extension folders as well as the separate PECL DLL download (PHP 5+).
+; Be sure to appropriately set the extension_dir directive.
+;
+
+#        extension=php_curl.dll
+
+Luego instalar 
+
+sudo apt-get install php-curl
+
+#   max_execution_time = 180
+Esto ya q se tarda como dos minutos en ejecutar el script de sendgrid   envia.php
+
+
+
 <a name="backup1"></a>
 # Codigo PHP para enviar el mail con adjunto:  
 Nombre de Archivo envia.php
@@ -82,27 +107,6 @@ Ejemplo tomado de: https://github.com/sendgrid/sendgrid-php/blob/master/USE_CASE
 ?>
 
 ```
-
-<a name="phpini"></a>
-## Configuracion de Php.ini:  
-Habilitaciones que debemos hacer en el archivo php.ini para poder enviar emails con archivo adjunto via la libreria sendgrid
-ruta: /etc/php/7.0/apache2 
-
-;Windows Extensions
-; Note that ODBC support is built in, so no dll is needed for it.
-; Note that many DLL files are located in the extensions/ (PHP 4) ext/ (PHP 5+)
-; extension folders as well as the separate PECL DLL download (PHP 5+).
-; Be sure to appropriately set the extension_dir directive.
-;
-
-#        extension=php_curl.dll
-
-Luego instalar 
-
-sudo apt-get install php-curl
-
-#   max_execution_time = 180
-Esto ya q se tarda como dos minutos en ejecutar el script de sendgrid   envia.php
 
 
 
