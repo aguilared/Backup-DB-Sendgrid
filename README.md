@@ -117,7 +117,7 @@ Ejemplo tomado de: https://github.com/sendgrid/sendgrid-php/blob/master/USE_CASE
 ```
 
 
-
+ 
 <a name="cron2"></a>
 # Cron para enviar el backup via Sendgrid como archivo adjunto: 
 Corren cada cuatro horas desde la 01:00 hasta la 21:00
