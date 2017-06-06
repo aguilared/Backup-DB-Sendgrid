@@ -63,19 +63,19 @@ Luego instalar
 sudo apt-get install php-curl
 
 #   max_execution_time = 180
-Esto ya q se tarda como dos minutos en ejecutar el script de sendgrid   envia.php
+Esto ya q se tarda como dos minutos en ejecutar el script de sendgrid   sendmail.php
 
 
 <a name="sendgrid"></a>
 # Descargando Libreria Sendgrid:
 
-Descargar libreria desde:
-https://github.com/sendgrid/sendgrid-php
+Descargar libreria sendgrid-php desde:
+https://github.com/sendgrid/sendgrid-php.  Colocarla en directorio d la app, 
 
 
 <a name="backup1"></a>
 # Codigo PHP para enviar el mail con adjunto:  
-Nombre de Archivo envia.php
+Nombre de Archivo sendmail.php
 Ejemplo tomado de: https://github.com/sendgrid/sendgrid-php/blob/master/USE_CASES.md#attachments
 
 ```php
@@ -120,4 +120,4 @@ Ejemplo tomado de: https://github.com/sendgrid/sendgrid-php/blob/master/USE_CASE
 <a name="cron2"></a>
 # Cron para enviar el backup via Sendgrid como archivo adjunto: 
 Corren cada cuatro horas desde la 01:00 hasta la 21:00
-0 1,5,9,13,17,21 * * * php /var/backup-bd/envia.php >> /var/log/backup-bd.log
+0 1,5,9,13,17,21 * * * php /var/backup-bd/sendmail.php >> /var/log/backup-bd.log
