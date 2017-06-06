@@ -106,7 +106,6 @@ Esto ya q se tarda como dos minutos en ejecutar el script de sendgrid   envia.ph
 
 
 
-```
 <a name="cron2"></a>
 # Cron para enviar el backup via Sendgrid como archivo adjunto:  
 0 0,4,8,12,16,20 * * * php /var/backup-bd/envia.php >> /var/log/backup-bd.log
