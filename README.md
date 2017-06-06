@@ -11,8 +11,8 @@ This documentation provides examples for specific use cases from Backups.
 * [Creando carpeta](#creando1)
 * [Creando Backup con Cron](#cron1)
 * [Creando archivo Logs](#logs1)
-* [Codigo para enviar el Backup](#backup1)
 * [Configuracion de Php.ini](#phpini)
+* [Codigo para enviar el Backup](#backup1)
 * [Cron para enviar Backup](#cron2)
 
 <a name="objetivo"></a>
@@ -80,6 +80,8 @@ Ejemplo tomado de: https://github.com/sendgrid/sendgrid-php/blob/master/USE_CASE
 	echo $response->body();
 
 ?>
+
+```
 
 <a name="phpini"></a>
 ## Configuracion de Php.ini:  
