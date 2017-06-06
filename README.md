@@ -12,13 +12,14 @@ This documentation provides examples for specific use cases from Backups.
 * [Creando Backup con Cron](#cron1)
 * [Creando archivo Logs](#logs1)
 * [Configuracion de Php.ini](#phpini)
+* [Descargando Libreria Sendgrid](#sendgrid)
 * [Codigo para enviar el Backup](#backup1)
 * [Cron para enviar Backup](#cron2)
 
 <a name="objetivo"></a>
 # Objetivo:  
 Manual donde se describe las tareas  para realizar backups automaticos de una Base de 
-de Datos, en este caso utilizamos un Servidor con Linux  Ubuntu 16.04. Se debe de tener instalado Servidor Web Apache, y PHP Version 7.0
+de Datos, luego periodicamente enviarlos a destinatarios via Email
 
 <a name="requerimientos"></a>
 # Pre-requirements:  
@@ -64,6 +65,12 @@ sudo apt-get install php-curl
 #   max_execution_time = 180
 Esto ya q se tarda como dos minutos en ejecutar el script de sendgrid   envia.php
 
+
+<a name="sendgrid"></a>
+# Descargando Libreria Sendgrid:
+
+Descargar libreria desde:
+https://github.com/sendgrid/sendgrid-php
 
 
 <a name="backup1"></a>
