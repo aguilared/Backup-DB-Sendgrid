@@ -15,6 +15,7 @@ This documentation provides examples for specific use cases from Backups.
 * [Descargando Libreria Sendgrid](#sendgrid)
 * [Codigo para enviar el Backup](#backup1)
 * [Cron para enviar Backup](#cron2)
+* [Tips](#tips)
 
 <a name="objetivo"></a>
 # Objetivo:  
@@ -120,4 +121,9 @@ Ejemplo tomado de: https://github.com/sendgrid/sendgrid-php/blob/master/USE_CASE
 <a name="cron2"></a>
 # Cron para enviar el backup via Sendgrid como archivo adjunto: 
 Corren cada cuatro horas desde la 01:00 hasta la 21:00
+0 1,5,9,13,17,21 * * * php /var/backup-bd/sendmail.php >> /var/log/backup-bd.log
+
+
+<a name="tips"></a>
+Correr un Cron cada minuto
 0 1,5,9,13,17,21 * * * php /var/backup-bd/sendmail.php >> /var/log/backup-bd.log
