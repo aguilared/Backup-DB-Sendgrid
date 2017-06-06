@@ -18,8 +18,8 @@ This documentation provides examples for specific use cases from Backups.
 
 <a name="objetivo"></a>
 # Objetivo:  
-Manual donde se describe las tareas  para realizar backups automaticos de una Base de 
-de Datos, luego periodicamente enviarlos a destinatarios via Email
+Manual donde se describe las tareas  para realizar backups programados de una Base de 
+de Datos, luego periodicamente enviarlos a destinatarios via Email, para esto se utilizara la libreria "Sendgrid"
 
 <a name="requerimientos"></a>
 # Pre-requirements:  
@@ -118,5 +118,6 @@ Ejemplo tomado de: https://github.com/sendgrid/sendgrid-php/blob/master/USE_CASE
 
 
 <a name="cron2"></a>
-# Cron para enviar el backup via Sendgrid como archivo adjunto:  
-0 0,4,8,12,16,20 * * * php /var/backup-bd/envia.php >> /var/log/backup-bd.log
+# Cron para enviar el backup via Sendgrid como archivo adjunto: 
+Corren cada cuatro horas desde la 01:00 hasta la 21:00
+0 1,5,9,13,17,21 * * * php /var/backup-bd/envia.php >> /var/log/backup-bd.log
