@@ -7,14 +7,13 @@ This documentation provides examples for specific use cases from Backups.
 # Table of Contents
 
 * [Objetivo](#objetivo)
-* [Requerimientos Minimos](#requerimientos)
+* [Pre-requirements](#requerimientos)
 * [Creando carpeta](#creando1)
 * [Creando Backup con Cron](#cron1)
 * [Creando archivo Logs](#logs1)
 * [Codigo para enviar el Backup](#backup1)
-* [Cron para enviar Backup](#cron2)
 * [Configuracion de Php.ini](#phpini)
-
+* [Cron para enviar Backup](#cron2)
 
 <a name="objetivo"></a>
 # Objetivo:  
@@ -22,8 +21,8 @@ Manual donde se describe las tareas  para realizar backups automaticos de una Ba
 de Datos, en este caso utilizamos un Servidor con Linux  Ubuntu 16.04. Se debe de tener instalado Servidor Web Apache, y PHP Version 7.0
 
 <a name="requerimientos"></a>
-# Requerimientos Minimos:  
-Servidor con Linux  Ubuntu 16.04. Servidor Web Apache. PHP Version 7.0
+# Pre-requirements:  
+Servidor Linux  Ubuntu 16.04. Servidor Web Apache. PHP Version 7.0
 
 
 
@@ -81,13 +80,10 @@ Ejemplo tomado de: https://github.com/sendgrid/sendgrid-php/blob/master/USE_CASE
 	echo $response->body();
 
 ?>
-```
-<a name="cron2"></a>
-# Cron para enviar el backup via Sendgrid como archivo adjunto:  
-0 0,4,8,12,16,20 * * * php /var/backup-bd/envia.php >> /var/log/backup-bd.log
 
 <a name="phpini"></a>
-## Configuracion de Php.ini:   
+## Configuracion de Php.ini:  
+Habilitaciones que debemos hacer en el archivo php.ini para poder enviar emails con archivo adjunto via la libreria sendgrid
 ruta: /etc/php/7.0/apache2 
 
 ;Windows Extensions
@@ -108,3 +104,7 @@ Esto ya q se tarda como dos minutos en ejecutar el script de sendgrid   envia.ph
 
 
 
+```
+<a name="cron2"></a>
+# Cron para enviar el backup via Sendgrid como archivo adjunto:  
+0 0,4,8,12,16,20 * * * php /var/backup-bd/envia.php >> /var/log/backup-bd.log
