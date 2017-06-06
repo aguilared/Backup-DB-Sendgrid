@@ -12,6 +12,8 @@ This documentation provides examples for specific use cases from Backups.
 * [Creando archivo Logs](#logs1)
 * [Codigo para enviar el Backup](#backup1)
 * [Cron para enviar Backup](#cron2)
+* [Configuracion de Php.ini](#phpini)
+
 
 <a name="objetivo"></a>
 # Objetivo:  
@@ -77,4 +79,26 @@ Ejemplo tomado de: https://github.com/sendgrid/sendgrid-php/blob/master/USE_CASE
 <a name="cron2"></a>
 # Cron para enviar el backup via Sendgrid como archivo adjunto:  
 0 0,4,8,12,16,20 * * * php /var/backup-bd/envia.php >> /var/log/backup-bd.log
+
+<a name="phpini"></a>
+## Configuracion de Php.ini:  
+En
+;Windows Extensions
+; Note that ODBC support is built in, so no dll is needed for it.
+; Note that many DLL files are located in the extensions/ (PHP 4) ext/ (PHP 5+)
+; extension folders as well as the separate PECL DLL download (PHP 5+).
+; Be sure to appropriately set the extension_dir directive.
+;
+
+#        extension=php_curl.dll
+
+Luego instalar 
+
+sudo apt-get install php-curl
+
+#   max_execution_time = 180
+Esto ya q se tarda como dos minutos en ejecutar el script de sendgrid   envia.php
+
+
+
 
