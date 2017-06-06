@@ -22,7 +22,7 @@ de Datos, en este caso utilizamos un Servidor con Linux  Ubuntu 16.04. Se debe d
 
 <a name="requerimientos"></a>
 # Pre-requirements:  
-Servidor Linux  Ubuntu 16.04. Servidor Web Apache. PHP Version 7.0
+Servidor Linux  Ubuntu 16.04. Servidor Web Apache. PHP Version 7.0,  buen manual en https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-16-04
 
 
 
