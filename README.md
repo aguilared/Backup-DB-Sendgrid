@@ -81,8 +81,9 @@ Ejemplo tomado de: https://github.com/sendgrid/sendgrid-php/blob/master/USE_CASE
 0 0,4,8,12,16,20 * * * php /var/backup-bd/envia.php >> /var/log/backup-bd.log
 
 <a name="phpini"></a>
-## Configuracion de Php.ini:  
-En
+## Configuracion de Php.ini:   
+ruta: /etc/php/7.0/apache2 
+
 ;Windows Extensions
 ; Note that ODBC support is built in, so no dll is needed for it.
 ; Note that many DLL files are located in the extensions/ (PHP 4) ext/ (PHP 5+)
@@ -98,7 +99,6 @@ sudo apt-get install php-curl
 
 #   max_execution_time = 180
 Esto ya q se tarda como dos minutos en ejecutar el script de sendgrid   envia.php
-
 
 
 
