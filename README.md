@@ -19,7 +19,7 @@ This documentation provides examples for specific use cases from Backups.
 
 <a name="objetivo"></a>
 # Objetivo:  
-Manual donde se describe las tareas  para realizar backups programados de una Base de 
+Manual donde se describe las tareas  para realizar backups programados de una Base de  
 de Datos, luego periodicamente enviarlos a destinatarios via Email, para esto se utilizara la libreria "Sendgrid"
 
 <a name="requerimientos"></a>
