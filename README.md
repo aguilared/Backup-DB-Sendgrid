@@ -55,7 +55,7 @@ root@aguila2-OEM:/var/backup-bd# chmod 777 /var/log/backup-bd.log
 - Ruta: /etc/php/7.0/apache2. 
 - Habilitaciones que debemos hacer en el archivo php.ini para poder enviar emails con un archivo  
   adjunto via la libreria sendgrid:  
-  ```php
+ 
 ;Windows Extensions  
 ;Note that ODBC support is built in, so no dll is needed for it.  
 ;Note that many DLL files are located in the extensions/ (PHP 4) ext/ (PHP 5+)  
@@ -64,7 +64,7 @@ root@aguila2-OEM:/var/backup-bd# chmod 777 /var/log/backup-bd.log
 ;  
 extension=php_curl.dll  
 max_execution_time = 180
-...
+
 El script de sendgrid tardara mucho en caso de que el tamaño del Backup sea bastante grande, por eso se  
 mofifica a 180 para que no de error en retardo en tiempo de ejecucion. 
 
