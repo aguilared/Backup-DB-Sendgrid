@@ -24,7 +24,9 @@ periodicamente enviarlos a destinatarios via Email, para esto se utilizara la li
 
 <a name="requerimientos"></a>
 # Pre-requirements:  
-Servidor Linux  Ubuntu 16.04. Servidor Web Apache. PHP Version 7.0,  Servidor de Base de Datos "Mysql", buen manual para instalar estos pre-requisitos en: https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-16-04
+Servidor Linux  Ubuntu 16.04. Servidor Web Apache. PHP Version 7.0,  Servidor de Base de Datos "Mysql",  
+buen manual para instalar estos pre-requisitos en:  
+https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-16-04
 
 
 
