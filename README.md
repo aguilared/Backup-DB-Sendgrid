@@ -39,7 +39,7 @@ En: /var/backup-bd/
 
 
 <a name="cron1"></a>
-# Creando Backup con un Cron. 
+# Cron para ejecutar el Backup. 
 Corre cada cuatro horas.  
 0 0-23/4 * * * /usr/bin/mysqldump -u root -p****** BDname > /var/backup-bd/BDname.sql
  
