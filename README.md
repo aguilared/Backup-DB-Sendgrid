@@ -49,8 +49,9 @@ root@aguila2-OEM:/var/backup-bd# chmod 777 /var/log/backup-bd.log
 
 <a name="phpini"></a>
 ## Configuracion de Php.ini:  
-Habilitaciones que debemos hacer en el archivo php.ini para poder enviar emails con archivo adjunto via la libreria sendgrid
-ruta: /etc/php/7.0/apache2 
+- Ruta: /etc/php/7.0/apache2. 
+- Habilitaciones que debemos hacer en el archivo php.ini para poder enviar emails con un archivo  
+  adjunto via la libreria sendgrid:
 
 ;Windows Extensions
 ; Note that ODBC support is built in, so no dll is needed for it.
