@@ -40,12 +40,12 @@ https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mys
 
 <a name="cron1"></a>
 # Creando Backup con un Cron. 
-Corre cada cuatro horas.
-0 0-23/4 * * * /usr/bin/mysqldump -u root -p****** BDname > /var/backup-bd/BDname.sql >> /var/log/backup-bd.log.
+Corre cada cuatro horas.  
+0 0-23/4 * * * /usr/bin/mysqldump -u root -p****** BDname > /var/backup-bd/BDname.sql
  
 <a name="logs1"></a>
-# Creando el archivo log de los cron en: /var/log/backup-bd.log.
-Cambiando permisos
+# Creando el archivo log de los cron en: /var/log/backup-bd.log.  
+Cambiando permisos  
 root@aguila2-OEM:/var/backup-bd# chmod 777 /var/log/backup-bd.log
 
 
@@ -71,13 +71,12 @@ mofifica a 180 para que no de error en retardo en tiempo de ejecucion.
 sudo apt-get install php-curl
 
 
-
-
 <a name="sendgrid"></a>
 # Descargando Libreria Sendgrid:
 
-Descargar libreria sendgrid-php desde:
-https://github.com/sendgrid/sendgrid-php.  Colocarla en directorio d la app, 
+Descargar libreria sendgrid-php desde:  
+https://github.com/sendgrid/sendgrid-php.  
+Colocarla en directorio de la app, 
 
 
 <a name="backup1"></a>
