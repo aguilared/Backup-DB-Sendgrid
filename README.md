@@ -55,7 +55,14 @@ root@aguila2-OEM:/var/backup-bd# chmod 777 /var/log/backup-bd.log
 - Ruta: /etc/php/7.0/apache2. 
 - Habilitaciones que debemos hacer en el archivo php.ini para poder enviar emails con un archivo  
   adjunto via la libreria sendgrid:  
- 
+  
+Markdown
+: Herramienta de conversión de texto plano a HTML.
+: Lenguaje de marcado que facilita la escritura de documentos y artículos web.
+
+Multimarkdown
+: Lenguaje de marcado que añade características a las carencias de su hermano Markdown (tablas, notas al pie de página, listas de definiciones como esta…)  
+
 : ;Windows Extensions  
 : ;Note that ODBC support is built in, so no dll is needed for it.  
 : ;Note that many DLL files are located in the extensions/ (PHP 4) ext/ (PHP 5+)  
