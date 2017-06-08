@@ -83,7 +83,7 @@ Colocarla en directorio de la app,
 
 <a name="backup1"></a>
 # Codigo PHP para enviar el mail con adjunto:  
-Nombre de Archivo sendmail.php
+Nombre de Archivo sendmail.php  
 Ejemplo tomado de: https://github.com/sendgrid/sendgrid-php/blob/master/USE_CASES.md#attachments
 
 ```php
