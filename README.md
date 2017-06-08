@@ -35,7 +35,7 @@ https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mys
 
 <a name="creando1"></a>
 # Creando Carpeta para guardar las BD y scripts:
-/var/backup-bd/
+En: /var/backup-bd/
 
 
 <a name="cron1"></a>
