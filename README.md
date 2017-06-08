@@ -67,7 +67,7 @@ extension=php_curl.dll
 max_execution_time = 180  
 
 El script de sendgrid tardara mucho en caso de que el tamaño del Backup sea bastante grande, por eso se  
-mofifica a 180 para que no de error en retardo en tiempo de ejecucion. 
+modifica a 180 para que no de error en retardo en tiempo de ejecucion. 
 
 -Instalar Libreria php-curl:  
 sudo apt-get install php-curl
