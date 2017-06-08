@@ -125,11 +125,11 @@ Ejemplo tomado de: https://github.com/sendgrid/sendgrid-php/blob/master/USE_CASE
  
 <a name="cron2"></a>
 # Cron para enviar el backup via Sendgrid como archivo adjunto: 
-Corren cada cuatro horas desde la 01:00 hasta la 21:00
+Corren cada cuatro horas desde la 01:00 hasta la 21:00  
 0 1,5,9,13,17,21 * * * php /var/backup-bd/sendmail.php >> /var/log/backup-bd.log
 
 
 <a name="tips"></a>
 # Tips Varios: 
-Correr un Cron cada minuto
+Correr un Cron cada minuto  
 0 1,5,9,13,17,21 * * * php /var/backup-bd/sendmail.php >> /var/log/backup-bd.log
