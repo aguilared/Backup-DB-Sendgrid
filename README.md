@@ -24,7 +24,8 @@ periodicamente enviarlos a destinatarios via Email, para esto se utilizara la li
 
 <a name="requerimientos"></a>
 # Pre-requirements:  
-Servidor Linux  Ubuntu 16.04. Servidor Web Apache.  
+Servidor Linux  Ubuntu 16.04.  
+Servidor Web Apache.  
 PHP Version 7.0.  
 Servidor de Base de Datos "Mysql".  
 Un buen manual para instalar estos pre-requisitos en:  
